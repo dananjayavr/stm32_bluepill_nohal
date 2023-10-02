@@ -13,11 +13,13 @@ int main(void) {
     uart_UART1_config();
     gpio_LED_config();
 
+    gpio_LED_toggleRed();
+
     printf("Program is starting...\r\n");
     while(1)
     {
-        gpio_LED_toggleGreen();
         gpio_LED_toggleRed();
+        gpio_LED_toggleGreen();
         printf("Hello, World!\r\n");
         rcc_msDelay(500);
     }
