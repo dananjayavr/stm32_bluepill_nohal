@@ -15,6 +15,7 @@ add_executable(${EXECUTABLE}
 
         Peripherals/Src/rcc.c
         Peripherals/Src/uart.c
+        Peripherals/Src/gpio.c
         main.c
 )
 
